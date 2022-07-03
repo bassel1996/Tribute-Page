@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+}
+header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   height: 90px;
+}
+.upper-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-picture-div{
+    position: relative;
+    width: 900px;
+}
+.title-picture{
+    max-width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 50px;
+}
+
+.lower-div{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 5px;
+    margin:25px 50px 75px;
+    /*
+        top, right & left, bottom    
+    */
+    border: 5px solid red;
+}
+
+.about-div{
+    border: 5px solid green;
+}
+
+.about-picture-div{
+    border: 5px solid blue;
+}
