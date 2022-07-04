@@ -13,11 +13,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 5px solid lightpink;
 }
 
 .title-picture-div{
     position: relative;
     width: 900px;
+    border: 5px solid lightblue;
 }
 .title-picture{
     max-width: 100%;
