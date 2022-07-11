@@ -28,10 +28,22 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-.main-div{
-    /*the div that contains the rest of the page below the main photo*/
+    /*
+    .main-div{
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 750px 350px ;
+    grid-template-rows: 750px 350px ;}
+    */
+
+    
+    
+.main-div {
+     /*the div that contains the rest of the page below the main photo*/
+      display:grid;
+      grid-template-columns: 500px 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+     "article photo photo"
+     "article photo photo";
 }
