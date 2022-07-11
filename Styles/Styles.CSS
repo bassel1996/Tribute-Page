@@ -8,8 +8,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    height: 90px;
+    font-size: 90px;
+    padding: 50px 50px;
 }
 
 main{
@@ -28,47 +28,88 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-    /*
-    .main-div{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 750px 350px ;}
-    */
-
     
     
 .main-div {
      /*the div that contains the rest of the page below the main photo*/
-      display:grid;
-      grid-template-columns: 1500px 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+    padding-top: 120px;
+    display: grid;
+      grid-template-columns: 1300px 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr;
+      gap: 1.5em;
       grid-template-areas: 
-     "article photo photo"
-     "article photo photo";
+      "title title title"
+     "article photo1 photo2"
+     "article photo3 photo4";
+}
+
+h1{
+    margin: 0;
+    grid-area: title;
+    font-size: 110px;
+    padding-left: 50px;
 }
 
 .article-div{
     grid-area: article;
-    border: 5px solid red;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
+p{
+    font-size: 35px;
+}
+
+.photo {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
 .photo1-div{
-    grid-area: photo;
-    border: 5px solid lightblue;
+    grid-area: photo1;
 }
 
 .photo2-div{
-    grid-area: photo;
-    border: 5px solid lightpink;
+    grid-area: photo2;
 }
 
 .photo3-div{
-    grid-area: photo;
-    border: 5px solid lightblue;
+    grid-area: photo3;
 }
 
 .photo4-div{
-    grid-area: photo;
-    border: 5px solid lightpink;
+    grid-area: photo4;
+}
+
+.bottom-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1.5em;
+    grid-template-areas: 
+    "title title title"
+   "photo1 photo2 photo3";
+}
+
+.bottom-photo1{
+    grid-area: photo1;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.bottom-photo2{
+    grid-area: photo2;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.bottom-photo3{
+    grid-area: photo3;
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
