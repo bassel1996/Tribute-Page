@@ -4,6 +4,7 @@ body {
 }
 
 header{
+    /* the top sentence "the story of gotham" */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +19,7 @@ main{
 }
 
 .title{
+    /*the word "The Batman" on the top of the photo*/
     position: absolute;
     font-size: 60px;
     justify-content: center;
