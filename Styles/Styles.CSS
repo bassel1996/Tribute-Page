@@ -41,9 +41,34 @@ main{
 .main-div {
      /*the div that contains the rest of the page below the main photo*/
       display:grid;
-      grid-template-columns: 500px 1fr 1fr;
+      grid-template-columns: 1500px 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: 
      "article photo photo"
      "article photo photo";
+}
+
+.article-div{
+    grid-area: article;
+    border: 5px solid red;
+}
+
+.photo1-div{
+    grid-area: photo;
+    border: 5px solid lightblue;
+}
+
+.photo2-div{
+    grid-area: photo;
+    border: 5px solid lightpink;
+}
+
+.photo3-div{
+    grid-area: photo;
+    border: 5px solid lightblue;
+}
+
+.photo4-div{
+    grid-area: photo;
+    border: 5px solid lightpink;
 }
