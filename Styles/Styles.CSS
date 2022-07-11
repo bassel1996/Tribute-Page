@@ -30,6 +30,7 @@ main{
 }
 
 .main-div{
+    /*the div that contains the rest of the page below the main photo*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 750px 350px ;
