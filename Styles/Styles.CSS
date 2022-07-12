@@ -83,14 +83,33 @@ p{
     grid-area: photo4;
 }
 
+.discover,
+.read-more{
+    padding-top: 70px;
+    font-size: 70px;
+    padding-left: 35px;
+}
+
+
 .bottom-div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;
     gap: 1.5em;
     grid-template-areas: 
-    "title title title"
+    "title1 title2 title3"
    "photo1 photo2 photo3";
+   grid-row-gap: 0;
+   padding-top: 150px;
+}
+
+.pp{
+    font-size: 50px;
+    justify-items: center;
+    align-items: bottom;
+    margin: 0;
+    padding-bottom: 15px;
+    
 }
 
 .bottom-photo1{
